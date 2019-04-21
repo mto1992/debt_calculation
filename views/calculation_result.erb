@@ -1,0 +1,12 @@
+<h1>元金均等の返済スケジュールは下記の通りです</h1>
+
+<p>
+<% html_in_payments = params[:in_payment] %>
+<% html_in_payments.each do |payment| %>
+<%= payment %><br>
+<% end %>
+<%= params[:last_payment] %><br>
+<%= params[:full_payment]  %>
+<%= params[:error] %><br>
+</p>
+<a href="/">戻る</a>

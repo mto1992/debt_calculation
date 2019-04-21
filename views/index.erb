@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>借金計算機（元金均等返済）</title>
+    <link rel="stylesheet" href="/style.css">
+    </head>
+  <body>
+    <h1>このページは元金均等返済のシミュレーションをします</h1><br>
+      
+      <p>借入金額を指定してください</p><br>
+        <form action="calculation_result" method="post">
+        <input style="width:100px;" autocomplete="off" type="number"name="ganpon" id="ganpon_id" value="100000" onkeydown="nextFocus2(event)">
+
+      <p>年利は何％ですか？</p><br>
+        <input style="width:55px;" autocomplete="off" type="number" name="nenri" step="0.1" value="12">
+
+      <p>毎月一回の返済をする場合、何回で返済予定ですか？</p><br>
+        <input style="width:55px;" autocomplete="off" type="number" name="bunkatu" value="12">
+          <input type="submit" name="button1" value="計算！" ></form>
+          <a href="revolving_credit">リボ払い計算はこちら</a>
+          
+  </body>
+</html>

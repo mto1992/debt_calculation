@@ -1,0 +1,13 @@
+<h1>リボ払いの返済スケジュールは下記の通りです</h1>
+
+<p>
+<% html_in_revolvings = params[:in_revolving] %>
+<% html_in_revolvings.each do |revolving| %>
+<%= revolving %><br>
+<% end %>
+<%= params[:last_revolving] %><br>
+<%= params[:full_revolving]  %>
+<%= params[:error]  %>
+</p>
+<a href="/">元金均等返済計算はこちら</a><br>
+<a href="revolving_credit">再度リボ払い計算</a>

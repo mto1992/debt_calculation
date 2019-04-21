@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>借金計算機（定額リボルビング方式）</title>
+    <link rel="stylesheet" href="/style.css">
+    </head>
+  <body>
+    <h1>リボ払いで借金をした場合の返済シミュレーションをします</h1><br>
+    
+<p>借入金額を指定してください</p><br>
+ <form action="revolving_result" method="post">
+<input style="width:100px;" autocomplete="off" type="number"name="ganpon" id="ganpon_id" value="100000" onkeydown="nextFocus2(event)">
+<p>年利は何％ですか？</p><br>
+<input style="width:55px;" autocomplete="off" type="number" name="nenri" step="0.1" value="12">
+<p>毎月一回の返済をする場合、何円ずつ返済予定ですか？</p><br>
+<input style="width:100px;" autocomplete="off" type="number" name="revolving" step="1000"value="10000">
+
+    <input type="submit" name="button2" value="リボ払いで計算！" ></form>
+    <a href="/">戻る</a>
+  </body>
+</html>
